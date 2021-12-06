@@ -117,10 +117,12 @@ namespace Lab10Starter
                 }
                 if (rowSum == 0)
                 {
+                    scores[(int)Player.O]++;
                     return Player.O;
                 }
                 else if (rowSum == GRID_SIZE)
                 {
+                    scores[(int)Player.X]++;
                     return Player.X;
                 }
             }
@@ -134,10 +136,12 @@ namespace Lab10Starter
                 }
                 if (colSum == 0)
                 {
+                    scores[(int)Player.O]++;
                     return Player.O;
                 }
                 else if (colSum == GRID_SIZE)
                 {
+                    scores[(int)Player.X]++;
                     return Player.X;
                 }
             }
@@ -151,10 +155,12 @@ namespace Lab10Starter
 
             if (diagonalSum == 0)
             {
+                scores[(int)Player.O]++;
                 return Player.O;
             }
             else if (diagonalSum == GRID_SIZE)
             {
+                scores[(int)Player.X]++;
                 return Player.X;
             }
 
@@ -167,10 +173,12 @@ namespace Lab10Starter
 
             if (diagonalSum == 0)
             {
+                scores[(int)Player.O]++;
                 return Player.O;
             }
             else if (diagonalSum == GRID_SIZE)
             {
+                scores[(int)Player.X]++;
                 return Player.X;
             }
 
